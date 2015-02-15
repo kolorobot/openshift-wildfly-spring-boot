@@ -2,19 +2,42 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>OpenShift</title>
+    <title>OpenShift: Spring Boot on WildFly 8.2</title>
 </head>
 <body>
-<form role="form" action="people">
-    <fieldset>
-        <legend>People search</legend>
-        <label for="lastName">Last name:</label>
-        <input id="lastName" type="text" name="lastName" value="McFarland"/>
-        <input type="submit" value="Search"/>
-    </fieldset>
-</form>
-<p>
-    ... or: <a href="people">Find all ...</a>
-</p>
+
+<div>
+    <h2>Demo</h2>
+
+    <form role="form" action="people">
+        <fieldset>
+            <legend>People search</legend>
+            <label for="lastName">Last name:</label>
+            <input id="lastName" type="text" name="lastName" value="McFarland"/>
+            <input type="submit" value="Search"/>
+        </fieldset>
+    </form>
+    <p>
+        ... or: <a href="people">Find all ...</a>
+    </p>
+</div>
+
+<div>
+    <h2>Spring Actuator</h2>
+
+    <p>
+        Actuator endpoints allow you to monitor and interact with your application.
+        Spring Boot includes a number of built-in endpoints and you can also add your own.
+    </p>
+
+    <ul>
+        <li><a href="manage/autoconfig">autoconfig</a></li>
+        <li><a href="manage/configprops">configprops</a></li>
+        <li><a href="manage/dump">dump</a></li>
+        <li><a href="manage/env">env</a></li>
+        <li><a href="manage/metrics">metrics</a></li>
+    </ul>
+</div>
+
 </body>
 </html>
