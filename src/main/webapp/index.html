@@ -2,13 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>My App</title>
+    <title>OpenShift</title>
 </head>
 <body>
 <form role="form" action="people">
-    <label for="lastName">Last name:</label>
-    <input id="lastName" type="text" name="lastName"/>
-    <input type="submit" value="Search"/>
+    <fieldset>
+        <legend>People search</legend>
+        <label for="lastName">Last name:</label>
+        <input id="lastName" type="text" name="lastName" value="McFarland"/>
+        <input type="submit" value="Search"/>
+    </fieldset>
 </form>
+<p>
+    ... or: <a href="people">Find all ...</a>
+</p>
 </body>
 </html>
