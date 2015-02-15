@@ -1,9 +1,11 @@
 package demo.people;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.inject.Inject;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("people")
@@ -18,7 +20,10 @@ public class PeopleController {
 
 
     @RequestMapping
-    public Iterable<Person> findAll() {
+    public Iterable<Person> findAll(@RequestParam Optional<String> lastName) {
+        if (lastName.isPresent()) {
+            return peopleRepository.findByLastName(lastName.get());
+        }
         return peopleRepository.findAll();
     }
 }
