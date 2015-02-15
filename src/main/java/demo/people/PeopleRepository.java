@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-    @Repository
-    public interface PeopleRepository extends PagingAndSortingRepository<Person, Integer> {
-        List<Person> findByLastName(@Param("lastName") String lastName);
-    }
+@Repository
+public interface PeopleRepository extends PagingAndSortingRepository<Person, Integer> {
+    List<Person> findByLastName(@Param("lastName") String lastName);
+}
