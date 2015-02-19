@@ -38,4 +38,4 @@ You can now browse to: `http://<app-name>-<domain>.rhcloud.com` and you should s
 
 # Under the hood
 
-@TODO Link to the blog post
+http://blog.codeleak.pl/2015/02/openshift-build-spring-boot-application.html
