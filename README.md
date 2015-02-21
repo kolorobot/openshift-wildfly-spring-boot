@@ -8,7 +8,7 @@ To create an application using client tools, type the following command:
 
     rhc create-app <app-name> jboss-wildfly-8 --scaling
 
-This command creates an application *<app-name>* using *WildFly 8.2* cartridge with scalability option and clones the repository to *<app-name>* directory.
+This command creates an application *<app-name>* using *WildFly 8.2* cartridge with scalability option and clones the repository to *`<app-name>`* directory.
 
 # Step 2: Delete Template Application Source code
 
